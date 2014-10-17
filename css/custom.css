@@ -1,1 +1,7 @@
 /* Add here all your CSS customizations */
+#footer .footer-copyright {
+	background: #060606;
+	border-top: 0px solid #060606;
+	margin-top: 0px;
+	padding: 0px 0 10px;
+}
