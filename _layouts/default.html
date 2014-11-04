@@ -1,5 +1,5 @@
 ---
-title: SPETA - Singapore Precision Engineering & Tooling Association<
+title: SPETA - Singapore Precision Engineering & Tooling Association
 ---
 
 <!DOCTYPE html>
@@ -76,19 +76,19 @@ title: SPETA - Singapore Precision Engineering & Tooling Association<
 								<li>
 									<a href="index.html">Home</a>
 								</li>
-								<li class="dropdown">
-									<a class="dropdown-toggle" href="#">
+								<li class="dropdown{% if page.menu_active == 'about' %} active{% endif %}">
+									<a class="dropdown-toggle" href="about.html">
 										About Us
 										<i class="fa fa-angle-down"></i>
 									</a>
 									<ul class="dropdown-menu">
-	                                    <li><a href="about#profile">Profile</a></li>
-	                                    <li><a href="about#mission">Our Mission</a></li>
-	                                    <li><a href="about#council">Management Council</a></li>
-	                                    <li><a href="about#alliance">Our Alliances</a></li>
+	                                    <li><a href="about.html#profile">Profile</a></li>
+	                                    <li><a href="about.html#mission">Our Mission</a></li>
+	                                    <li><a href="about.html#council">Management Council</a></li>
+	                                    <li><a href="about.html#alliance">Our Alliances</a></li>
 									</ul>
 								</li>
-								<li class="dropdown">
+								<li class="dropdown{% if page.menu_active == 'membership' %} active{% endif %}">
 									<a class="dropdown-toggle" href="#">
 										Membership
 										<i class="fa fa-angle-down"></i>
@@ -100,7 +100,7 @@ title: SPETA - Singapore Precision Engineering & Tooling Association<
 									</ul>
 								</li>
 								
-								<li class="dropdown">
+								<li class="dropdown{% if page.menu_active == 'company' %} active{% endif %}">
 									<a class="dropdown-toggle" href="#">
 										Company Directory
 										<i class="fa fa-angle-down"></i>
@@ -111,7 +111,7 @@ title: SPETA - Singapore Precision Engineering & Tooling Association<
 									</ul>
 								</li>
 								
-								<li class="dropdown">
+								<li class="dropdown{% if page.menu_active == 'event' %} active{% endif %}">
 									<a class="dropdown-toggle" href="#">
 										Events
 										<i class="fa fa-angle-down"></i>
@@ -122,7 +122,7 @@ title: SPETA - Singapore Precision Engineering & Tooling Association<
 									</ul>
 								</li>
 								
-								<li class="dropdown">
+								<li class="dropdown{% if page.menu_active == 'contact' %} active{% endif %}">
 									<a class="dropdown-toggle" href="#">
 										Contact Us
 										<i class="fa fa-angle-down"></i>
