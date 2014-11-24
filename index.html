@@ -340,90 +340,22 @@ layout: default
 		<div class="row">
 
 			<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
-				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
-					<div class="portfolio-item img-thumbnail">
-						<a href="http://www.fongspl.com.sg/" class="thumb-info">
-							<img alt="" class="img-responsive" src="images/adv/company1.jpg">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner">Fong's Engrg & Mfg</span>
-								<span class="thumb-info-type">Pte Ltd</span>
-							</span>
-							<span class="thumb-info-action">
-								<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-							</span>
-						</a>
-					</div>
-				</li>
-				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
-					<div class="portfolio-item img-thumbnail">
-						<a href="http://www.micro-mechanics.com/" class="thumb-info">
-							<img alt="" class="img-responsive" src="images/adv/company2.jpg">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner">Micro-Mechanics</span>
-								<span class="thumb-info-type">Pte Ltd</span>
-							</span>
-							<span class="thumb-info-action">
-								<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-							</span>
-						</a>
-					</div>
-				</li>
-				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
-					<div class="portfolio-item img-thumbnail">
-						<a href="http://www.armstrong.com.sg/" class="thumb-info">
-							<img alt="" class="img-responsive" src="images/adv/company3.jpg">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner">Armstrong Industrial</span>
-								<span class="thumb-info-type">Corp Ltd</span>
-							</span>
-							<span class="thumb-info-action">
-								<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-							</span>
-						</a>
-					</div>
-				</li>
-				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
-					<div class="portfolio-item img-thumbnail">
-						<a href="http://www.ichiseiki.com/" class="thumb-info">
-							<img alt="" class="img-responsive" src="images/adv/company4.jpg">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner">Ichi Seiki</span>
-								<span class="thumb-info-type">Pte Ltd</span>
-							</span>
-							<span class="thumb-info-action">
-								<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-							</span>
-						</a>
-					</div>
-				</li>
-				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
-					<div class="portfolio-item img-thumbnail">
-						<a href="http://www.flmetal.com.sg/" class="thumb-info">
-							<img alt="" class="img-responsive" src="images/adv/company5.jpg">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner">Fong Lee Metal Industries</span>
-								<span class="thumb-info-type">Pte Ltd</span>
-							</span>
-							<span class="thumb-info-action">
-								<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-							</span>
-						</a>
-					</div>
-				</li>
-				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
-					<div class="portfolio-item img-thumbnail">
-						<a href="http://www.trendsingapore.com.sg/" class="thumb-info">
-							<img alt="" class="img-responsive" src="images/adv/company6.jpg">
-							<span class="thumb-info-title">
-								<span class="thumb-info-inner">Trend Singapore West</span>
-								<span class="thumb-info-type">Pte Ltd</span>
-							</span>
-							<span class="thumb-info-action">
-								<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-							</span>
-						</a>
-					</div>
-				</li>
+				{% for event in site.data.events %}
+	  				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
+						<div class="portfolio-item img-thumbnail">
+							<a href="{{ event.website }}" class="thumb-info">
+								<img alt="" class="img-responsive" src="images/events/{{ event.id }}.jpg">
+								<span class="thumb-info-title">
+									<span class="thumb-info-inner">{{ event.name }}</span>
+									<span class="thumb-info-type">{{ event.country }}, {{ event.date }}</span>
+								</span>
+								<span class="thumb-info-action">
+									<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+								</span>
+							</a>
+						</div>
+					</li>
+				{% endfor %}
 			</ul>
 		</div>
 
