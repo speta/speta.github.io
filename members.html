@@ -24,55 +24,62 @@ menu_active: company
 	</section>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<strong>As at 31 Oct 2014</strong>
-				<table id="member-list" class="table table-striped ">
-					<tr>
-						<th>No.</th>
-						<th>Company Name & Address</th>
-						<th>Tel</th>
-					</tr>
-					{% for member in site.data.members %}
-						<tr>
-							<td>{{ member.no }}</td>
-							<td>
-								<span class="spaced">{{ member.name | upcase}}</span>
-								<br/>
-								<span>{{ member.address }} {{ member.unit }}, Singapore {{ member.postcode }}</span>
-							</td>
-							<td><span>{{ member.tel }}</span></td>
-						</tr>
-					{% endfor %}
-				</table>
-			</div>
-		</div>
+		<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter">
+			<li data-option-value="*" class="active"><a href="#">Show All</a></li>
+			<li data-option-value=".number"><a href="#">#</a></li>
+			<li data-option-value=".a"><a href="#">A</a></li>
+			<li data-option-value=".b"><a href="#">B</a></li>
+			<li data-option-value=".c"><a href="#">C</a></li>
+			<li data-option-value=".d"><a href="#">D</a></li>
+			<li data-option-value=".e"><a href="#">E</a></li>
+			<li data-option-value=".f"><a href="#">F</a></li>
+			<li data-option-value=".g"><a href="#">G</a></li>
+			<li data-option-value=".h"><a href="#">H</a></li>
+			<li data-option-value=".i"><a href="#">I</a></li>
+			<li data-option-value=".j"><a href="#">J</a></li>
+			<li data-option-value=".k"><a href="#">K</a></li>
+			<li data-option-value=".l"><a href="#">L</a></li>
+			<li data-option-value=".m"><a href="#">M</a></li>
+			<li data-option-value=".n"><a href="#">N</a></li>
+			<li data-option-value=".o"><a href="#">O</a></li>
+			<li data-option-value=".p"><a href="#">P</a></li>
+			<li data-option-value=".q"><a href="#">Q</a></li>
+			<li data-option-value=".r"><a href="#">R</a></li>
+			<li data-option-value=".s"><a href="#">S</a></li>
+			<li data-option-value=".t"><a href="#">T</a></li>
+			<li data-option-value=".u"><a href="#">U</a></li>
+			<li data-option-value=".v"><a href="#">V</a></li>
+			<li data-option-value=".w"><a href="#">W</a></li>
+			<li data-option-value=".x"><a href="#">X</a></li>
+			<li data-option-value=".y"><a href="#">Y</a></li>
+			<li data-option-value=".z"><a href="#">Z</a></li>
+		</ul>
+
+		<hr />
 
 		<div class="row">
-			<div class="col-md-12">
 
-				<ul class="history">
-					{% for member in site.data.members %}
-						<li data-appear-animation="fadeInUp">
-							<div class="thumb">
-								<img src="images/members/logo.jpg" alt="" />
+			<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+				{% for member in site.data.members %}
+					<li class="col-md-12 col-sm-12 col-xs-12 isotope-item {{ member.index}}">
+						<div class="feature-box">
+							<div class="feature-box-icon">
+								<span><strong>{{ member.no }}</strong></span>
 							</div>
-							<div class="featured-box">
-								<div class="box-content">
-									<h4><strong>{{ member.no }}</strong></h4>
-									<p>{{ member.name | upcase}}</p>
-									<p><i class="fa fa-map-marker"></i><strong>Address:</strong>{{ member.address }} {{ member.unit }}, Singapore {{ member.postcode }}</p>
-									<p><i class="fa fa-phone"></i> <strong>Telephone:</strong> +65 {{ member.tel }}</p>
-
-								</div>
+							<div class="feature-box-info">
+								<h4 class="shorter">{{ member.name | upcase}}</h4>
+								<i class="fa fa-map-marker"></i><strong>Address: </strong>{{ member.address }} {{ member.unit }}, Singapore {{ member.postcode }}
+								<p class="tall"><i class="fa fa-phone"></i> <strong>Telephone: </strong> +65 {{ member.tel }} </p>
+								
 							</div>
-						</li>
-					{% endfor %}
-				</ul>
-
-			</div>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
 		</div>
+
 	</div>
+
 
 
 </div>
