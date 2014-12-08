@@ -5,3 +5,13 @@
 	margin-top: 0px;
 	padding: 0px 0 10px;
 }
+
+#member-list td{
+	vertical-align: middle;
+}
+
+ul.member {
+margin: 0 0 60px;
+padding: 0;
+list-style: none;
+}

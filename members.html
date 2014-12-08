@@ -1,0 +1,78 @@
+---
+layout: default
+menu_active: company
+---
+
+<div role="main" class="main">
+
+	<section class="page-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">SPETA Members</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>SPETA Members</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<strong>As at 31 Oct 2014</strong>
+				<table id="member-list" class="table table-striped ">
+					<tr>
+						<th>No.</th>
+						<th>Company Name & Address</th>
+						<th>Tel</th>
+					</tr>
+					{% for member in site.data.members %}
+						<tr>
+							<td>{{ member.no }}</td>
+							<td>
+								<span class="spaced">{{ member.name | upcase}}</span>
+								<br/>
+								<span>{{ member.address }} {{ member.unit }}, Singapore {{ member.postcode }}</span>
+							</td>
+							<td><span>{{ member.tel }}</span></td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<ul class="history">
+					{% for member in site.data.members %}
+						<li data-appear-animation="fadeInUp">
+							<div class="thumb">
+								<img src="images/members/logo.jpg" alt="" />
+							</div>
+							<div class="featured-box">
+								<div class="box-content">
+									<h4><strong>{{ member.no }}</strong></h4>
+									<p>{{ member.name | upcase}}</p>
+									<p><i class="fa fa-map-marker"></i><strong>Address:</strong>{{ member.address }} {{ member.unit }}, Singapore {{ member.postcode }}</p>
+									<p><i class="fa fa-phone"></i> <strong>Telephone:</strong> +65 {{ member.tel }}</p>
+
+								</div>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
