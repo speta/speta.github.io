@@ -1,8 +1,8 @@
 <header id="header" class="colored flat-menu darken-top-border">
 	<div class="container">
 		<h1 class="logo">
-			<a href="index.html">
-				<img alt="Porto" width="163" height="55" data-sticky-width="163" data-sticky-height="55" src="images/logo.png">
+			<a href="{{ site.url }}/index.html">
+				<img alt="Porto" width="163" height="55" data-sticky-width="163" data-sticky-height="55" src="{{ site.url }}/images/logo.png">
 			</a>
 		</h1>
 		<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
@@ -14,65 +14,65 @@
 			<nav class="nav-main mega-menu">
 				<ul class="nav nav-pills nav-main" id="mainMenu">								
 					<li>
-						<a href="index.html">Home</a>
+						<a href="{{ site.url }}/index.html">Home</a>
 					</li>
 					<li class="dropdown{% if page.menu_active == 'about' %} active{% endif %}">
-						<a class="dropdown-toggle" href="about.html">
+						<a class="dropdown-toggle" href="{{ site.url }}/about.html">
 							About Us
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-                            <li><a href="about.html">Profile</a></li>
-                            <li><a href="about.html#mission">Our Mission</a></li>
-                            <li><a href="about.html#council">Management Council</a></li>
-                            <li><a href="about.html#alliance">Our Alliances</a></li>
+                            <li><a href="{{ site.url }}/about.html">Profile</a></li>
+                            <li><a href="{{ site.url }}/about.html#mission">Our Mission</a></li>
+                            <li><a href="{{ site.url }}/about.html#council">Management Council</a></li>
+                            <li><a href="{{ site.url }}/about.html#alliance">Our Alliances</a></li>
 						</ul>
 					</li>
 					<li class="dropdown{% if page.menu_active == 'membership' %} active{% endif %}">
-						<a class="dropdown-toggle" href="membership.html">
+						<a class="dropdown-toggle" href="{{ site.url }}/membership.html">
 							Membership
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-                            <li><a href="membership.html">Benefits</a></li>
-                            <li><a href="membership.html#type">Types of Memberships</a></li>
-                            <li><a href="application.html">Application Form</a></li>
+                            <li><a href="{{ site.url }}/membership.html">Benefits</a></li>
+                            <li><a href="{{ site.url }}/membership.html#type">Types of Memberships</a></li>
+                            <li><a href="{{ site.url }}/application.html">Application Form</a></li>
 						</ul>
 					</li>
 					
 					<li class="dropdown{% if page.menu_active == 'company' %} active{% endif %}">
-						<a class="dropdown-toggle" href="members.html">
+						<a class="dropdown-toggle" href="{{ site.url }}/members.html">
 							Company Directory
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-                            <li><a href="members.html">SPETA Members</a></li>
-                            <!-- <li><a href="comapny.html">Full Listing (including non-SPETA members)</a></li> -->
+                            <li><a href="{{ site.url }}/members.html">SPETA Members</a></li>
+                            <!-- <li><a href="{{ site.url }}/comapny.html">Full Listing (including non-SPETA members)</a></li> -->
 						</ul>
 					</li>
 					
 					<li class="dropdown{% if page.menu_active == 'event' %} active{% endif %}">
-						<a class="dropdown-toggle" href="event.html">
+						<a class="dropdown-toggle" href="{{ site.url }}/event.html">
 							Events
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-                            <li><a href="event.html">Trade Fairs & Missions</a></li>
+                            <li><a href="{{ site.url }}/event.html">Trade Fairs & Missions</a></li>
 
-                            <li><a href="event.html#networking">Networking</a></li>
-                            <li><a href="event.html#others">Others</a></li>
+                            <li><a href="{{ site.url }}/event.html#networking">Networking</a></li>
+                            <li><a href="{{ site.url }}/event.html#others">Others</a></li>
 						</ul>
 					</li>
 					
 					<li class="dropdown{% if page.menu_active == 'contact' %} active{% endif %}">
-						<a class="dropdown-toggle" href="contact.html">
+						<a class="dropdown-toggle" href="{{ site.url }}/contact.html">
 							Contact Us
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-                            <li><a href="contact.html">Administration</a></li>
-                            <li><a href="contact.html#general">General Enquiry</a></li>
-                            <li><a href="contact.html#advert">Advertisements Enquiry</a></li>
+                            <li><a href="{{ site.url }}/contact.html">Administration</a></li>
+                            <li><a href="{{ site.url }}/contact.html#general">General Enquiry</a></li>
+                            <li><a href="{{ site.url }}/contact.html#advert">Advertisements Enquiry</a></li>
 						</ul>
 					</li>
 				</ul>
