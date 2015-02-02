@@ -10,7 +10,7 @@ menu_active: event
 			<div class="row">
 				<div class="col-md-12">
 					<ul class="breadcrumb">
-						<li><a href="#">Home</a></li>
+						<li><a href="{{ site.url }}/index.html">Home</a></li>
 						<li class="active">Events</li>
 					</ul>
 				</div>
@@ -29,7 +29,8 @@ menu_active: event
 			<div class="col-md-12">
 				<h3><strong>Trade Fairs & Missions</strong></h3>
 				<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
-					{% for post in site.categories.fair %}
+					{% assign posts = site.categories.fair | sort: 'event_start_date' %}
+					{% for post in posts %}
 		  				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
 							<div class="portfolio-item img-thumbnail">
 								<a href="{{ post.url }}" class="thumb-info">
