@@ -57,7 +57,7 @@ menu_active: company
 
 		<hr />
 
-		<p>As at 14 Jan 2015</p>
+		<p>As at 2 April 2015</p>
 
 		<div class="row">
 
@@ -70,9 +70,11 @@ menu_active: company
 							</div>
 							<div class="feature-box-info">
 								<h4 class="shorter">{{ member.name | upcase}}</h4>
-								<i class="fa fa-map-marker"></i><strong>Address: </strong>{{ member.address }} {{ member.unit }}, Singapore {{ member.postcode }}
-								<p class="tall"><i class="fa fa-phone"></i> <strong>Telephone: </strong> +65 {{ member.tel }} </p>
-								
+								<i class="fa fa-map-marker"></i><strong>Address: </strong>{{ member.address }} {{ member.unit }},{{ member.postcode }}
+								<p class="tall">
+									<i class="fa fa-phone"></i> <strong>Telephone: </strong> +65 {{ member.tel }} 
+									<i class="fa fa-fax"></i> <strong>Fax: </strong> +65 {{ member.fax }} 
+								</p>
 							</div>
 						</div>
 					</li>
