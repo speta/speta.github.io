@@ -29,7 +29,7 @@ menu_active: event
 		<div class="row">
 			<div class="col-md-6">
 				<div class="thumbnail">
-					<img src="{{ site.url }}/images/events/{{ page.event_name | slugify}}/0.jpg" alt="" />
+					<img src="{{ site.url }}/images/events/{{ page.event_id}}/0.jpg" alt="" />
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -77,7 +77,7 @@ menu_active: event
 					{% for i in (1..page.event_photo_count) %}
 						<li class="col-md-4 col-sm-6 col-xs-12 isotope-item">
 							<div class="portfolio-item img-thumbnail">
-								<a href="{{ site.url }}/images/events/{{ page.event_name | slugify}}/{{i}}.jpg" class="thumb-info">
+								<a href="{{ site.url }}/images/events/{{ page.event_id}}/{{i}}.jpg" class="thumb-info">
 									<img alt="" class="img-responsive" src="{{ site.url }}/images/events/{{ page.event_name | slugify}}/{{i}}.jpg">
 								</a>
 							</div>

@@ -27,14 +27,14 @@ menu_active: event
 
 		<div class="row">
 			<div class="col-md-12">
-				<h3><strong>Trade Fairs</strong></h3>
+				<h3><strong>Trade Fairs 2014</strong></h3>
 				<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
-					{% assign posts = site.categories.fair | sort: 'event_start_date' %}
+					{% assign posts = site.categories.fair2014 | sort: 'event_start_date' %}
 					{% for post in posts %}
 		  				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
 							<div class="portfolio-item img-thumbnail">
 								<a href="{{ post.url }}" class="thumb-info">
-									<img alt="" class="img-responsive" src="{{ site.url }}/images/events/{{ post.event_name | slugify}}/0.jpg">
+									<img alt="" class="img-responsive" src="{{ site.url }}/images/events/{{ post.event_id}}/0.jpg">
 									<span class="thumb-info-title">
 										<span class="thumb-info-inner">{{ post.event_name }}</span>
 										<span class="thumb-info-type">{{ post.event_start_date | date: "%d %b %Y" }}</span>
@@ -51,6 +51,61 @@ menu_active: event
 		</div>
 
 		<hr id="networking" class="tall">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3><strong>Trade Fairs 2015</strong></h3>
+				<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+					{% assign posts = site.categories.fair2015 | sort: 'event_start_date' %}
+					{% for post in posts %}
+		  				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
+							<div class="portfolio-item img-thumbnail">
+								<a href="{{ post.url }}" class="thumb-info">
+									<img alt="" class="img-responsive" src="{{ site.url }}/images/events/{{ post.event_id}}/0.jpg">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">{{ post.event_name }}</span>
+										<span class="thumb-info-type">{{ post.event_start_date | date: "%d %b %Y" }}</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+									</span>
+								</a>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<hr id="networking" class="tall">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3><strong>Trade Fairs 2016</strong></h3>
+				<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+					{% assign posts = site.categories.fair2015 | sort: 'event_start_date' %}
+					{% for post in posts %}
+		  				<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites">
+							<div class="portfolio-item img-thumbnail">
+								<a href="{{ post.url }}" class="thumb-info">
+									<img alt="" class="img-responsive" src="{{ site.url }}/images/events/{{ post.event_id}}/0.jpg">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">{{ post.event_name }}</span>
+										<span class="thumb-info-type">{{ post.event_start_date | date: "%d %b %Y" }}</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+									</span>
+								</a>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<hr id="networking" class="tall">
+
 		<div class="row">
 			<div class="col-md-12">
 				<h3><strong>Networking</strong></h3>
