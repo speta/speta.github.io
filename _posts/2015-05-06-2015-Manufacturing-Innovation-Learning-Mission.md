@@ -1,5 +1,5 @@
 ---
-layout: fair
+layout: mission
 categories: missions
 event_id: 2015-Manufacturing-Innovation-Learning-Mission
 event_name: Manufacturing Innovation Learning Mission
