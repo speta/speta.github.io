@@ -6,7 +6,7 @@ event_name: Manufacturing Innovation Learning Mission
 event_start_date: 2015/07/05
 event_end_date: 2015/07/10
 event_country: Germany
-event_city: 
+event_city: Stuttgart
 event_photo_count: 0
 ---
 
@@ -19,5 +19,4 @@ SCCCI, together with its training institute, SCCIOB, will lead a learning missio
 • Understand the R&D collaboration between the universities and SMEs
 • Learn the HR best practices implemented in German companies
 
-###Website
-<http://english.sccci.org.sg/index.cfm?GPID=2310>
+Website: <http://english.sccci.org.sg/index.cfm?GPID=2310>
