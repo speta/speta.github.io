@@ -1,5 +1,5 @@
 ---
-layout: networking
+layout: other
 categories: others
 event_id: agm2015-lunch
 event_name: 2015 SPETA AGM Lunch for Members - with presentations by SIMTech and JTC
