@@ -9,7 +9,7 @@ event_time: 2.00 pm to 5.00 pm
 event_venue_name: JTC Summit
 event_address: "8 Jurong Town Hall Road, S(609434)"
 event_venue_tel: 
-event_photo_count: 0
+event_photo_count: 3
 ---
 
 
