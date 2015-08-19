@@ -40,6 +40,8 @@ Travel back to JTC Summit
 End of programme
 
 
-<a href="{{ site.url }}/images/events/2015-JTC-SPETA-Site-Tour/form.docx">Download Registration Form</a>
-<a href="{{ site.url }}/documents/1.pdf">Sharing on JTC's Innovative Infrastructure Solutions For The Precision Engineering Industry_SPETA_29 July 2015</a>
-<a href="{{ site.url }}/documents/2.pdf">Sharing on JTC Space at Tampines North_SPETA_29 July 2015</a>
+<a href="{{ site.url }}/images/events/2015-JTC-SPETA-Site-Tour/form.docx">Download Registration Form</a><br>
+
+<a href="{{ site.url }}/documents/1.pdf">Sharing on JTC's Innovative Infrastructure Solutions For The Precision Engineering Industry_SPETA_29 July 2015</a><br>
+
+<a href="{{ site.url }}/documents/2.pdf">Sharing on JTC Space at Tampines North_SPETA_29 July 2015</a><br>
